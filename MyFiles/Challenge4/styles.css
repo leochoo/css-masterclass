@@ -1,0 +1,33 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color: #dde1d4;
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.main-grid {
+  display: grid;
+  gap: 5px;
+  height: 50vh;
+  grid-template:
+    "big big" 1fr
+    "big big" 1fr / 1fr 1fr;
+  /* "header header header header" 1fr
+  "content content content nav" 2fr
+  "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr; */
+}
+
+.big {
+  background-color: #f14011;
+  grid-area: big;
+}
+
+.small {
+  background-color: yellow;
+  grid-area: small;
+}
